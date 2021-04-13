@@ -1,0 +1,36 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div id="error"></div>
+        <div class="row">
+            <div class="col-md-4">
+                <img class="mt-5" src="img/postman2.png" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-5 mt-3 font-weight-bold">Contact Us</h2>
+                <form id="form"> 
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your name">
+                        <input type="email" name="email" aria-describedby="emailHelp" placeholder="Your email">
+                        <input type="text" name="subject" class="mt-5 d-block" placeholder="Subject">
+                        <textarea id="subMessage" name="message" placeholder="Your Message" cols="80" rows="6" class="mt-5"></textarea>
+                    </div>
+                    <button type="submit" class="btn-danger mt-3" name="sendmsg">Submit</button>
+                    <p id="success-message">Thanks For Your Message!!!</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+        
+            <script src="script.js"></script>
+        </body>
+</html>

@@ -1,0 +1,29 @@
+body{ font-family: 'Montserrat', sans-serif}
+
+input,
+textarea{
+    border-width: 0 0 1px;
+    border-color:grey;
+    outline:0
+}
+
+#success-message{
+    color:green;
+    font-size:20px;
+    margin-top:20px;
+    display:none
+}
+
+#error{
+    color:black;
+    padding:2rem;
+    background-color:red;
+    font-weight: bold;
+    display:none
+
+}
+
+button[type='submit']{
+    border-radius:65px;
+    padding:5px 25px
+}
