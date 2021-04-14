@@ -11,9 +11,8 @@ const successMessage = document.getElementById('success-message')
 
 form.addEventListener('submit', e => {
    let errors = []
-   if(inputName.value === '' || inputName.value == null){
+   if(inputName.value === ''){
       errors.push('Name is required')
-
    }
    if(inputEmail.value === ''){
       errors.push('Email is required')
@@ -24,14 +23,12 @@ form.addEventListener('submit', e => {
    if(inputMessage.value === ''){
       errors.push('Message is required')
    }
-      
    if(errors.length > 0){
       e.preventDefault()
-      error.innerText = errors.join(', ')
+      error.innerText = errors.join('* ')
       error.style.display = 'block'
    }else{
       successMessage.style.display = 'block'
    }
-      
 })
 
